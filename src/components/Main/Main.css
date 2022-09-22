@@ -1,0 +1,9 @@
+* {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+main {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    
+}
