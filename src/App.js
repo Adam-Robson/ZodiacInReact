@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 
 import './App.css';
 
@@ -9,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Main />
+      <Main signs={ signs } setSigns={ setSigns } />
       <Footer />
     </div>
   );
@@ -18,9 +19,9 @@ function App() {
 export default App;
 
 // Rubric
-//     +0.5    Main branch deployed to Netlify X
-//     +0.5    Open PR from dev branch with Netlify deploy preview X
-//     +3      Header and Footer components X
+//     +0.5    X Main branch deployed to Netlify X
+//     +0.5    X Open PR from dev branch with Netlify deploy preview X
+//     +3      X Header and Footer components X
 //     +4      Main component which imports list of Zodiac signs
 //     +4      Uses a .map to pass props to a child component
 //     +2      Child component displays sign’s image, name and dates
