@@ -6,13 +6,11 @@ import './Main.css';
 export default function Main() {
   return (
     <main>
-
-      {signs.map(({ id, title, image, dates }) => (
+      {signs.map(({ id, title, dates }) => (
         <Zodiac
           key={id}
           title={title}
-          image={image}
-          symbol={dates}
+          dates={dates}
         />
       ))}
     </main>
