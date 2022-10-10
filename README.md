@@ -41,5 +41,11 @@
   +Work on one feature at a time
   +If two components need to access the same state, use a callback function
   +Props pass state down the hierarchy
-  
+
 - Bootstrap: Create React App <https://github.com/facebook/create-react-app>
+
+
+//     +2      Child component displays sign’s image, name and dates
+//     +2      Styled using individual style sheets imported into components
+//     +2      At least one component uses a background image using an import
+//     +2      Zodiac images are loaded dynamically from the public directory

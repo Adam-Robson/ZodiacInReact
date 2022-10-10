@@ -5,7 +5,7 @@ import './Main.css';
 
 export default function Main() {
   return (
-    <main>
+    <main style={ { backgroundImage: "url('../../../img/background.png')" } } >
       {signs.map(({ id, title, dates }) => (
         <Zodiac
           key={id}

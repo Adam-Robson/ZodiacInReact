@@ -41,7 +41,7 @@ img {
 }
 
 .container:hover .image {
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 .container:hover .middle {
@@ -55,7 +55,7 @@ img {
     padding: 8px 20px;
     left: 155px;
     bottom: 30px;
-    font-size: medium;
+    font-size: small;
 }
 
 .title {
