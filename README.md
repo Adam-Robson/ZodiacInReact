@@ -1,53 +1,51 @@
-# Alchemy React Base Template
+# Zodiac
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- Learning Objectives
 
-Use this template for all your "from scratch" deliverables. To start, simply run
+    +Use className attribute to set styles versus style
+    +Display images in a React app
+    +Use attributes in parent components to pass data down to child components as props
+    +Use {} as “portals” in the render method to do JavaScript inside our HTML
+    +Use .map to iterate over an array and render new elements for each item in an array
+    +Add a unique key to each element rendered from a .map in React
+    +Use jsx to produce & render a React component
+    +Use Netlify to deploy a React app
 
-- `npm install`
-- `npm start`
+- Description
 
-## Available Scripts
+    +The app will load a list of Zodiac signs from a static file and then use a .map to loop through them and display a React component for each element on the list.
 
-In the project directory, you can run:
+- Acceptance Criteria
 
-### `npm start`
+    +App should contain a <Header> and <Footer> component with their own individual style sheets imported into the JSX file
+    +App should have a <Main> component which imports the list of zodiac signs
+    +<Main> component should map over the list of zodiac signs and pass the data as props to a child component <ZodiacCard>
+    +<ZodiacCard> should display the Zodiac sign’s image, name and dates
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Rubric
+    +0.5    Main branch deployed to Netlify
+    +0.5    Open PR from dev branch with Netlify deploy preview
+    +3      Header and Footer components
+    +4      Main component which imports list of Zodiac signs
+    +4      Uses a .map to pass props to a child component
+    +2      Child component displays sign’s image, name and dates
+    +2      Styled using individual style sheets imported into components
+    +2      At least one component uses a background image using an import
+    +2      Zodiac images are loaded dynamically from the public directory
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- APPROACH
+  +Sketch out your project
+  +Label each Component explicitly and List
+  +What STATE must be tracked? What EVENTS must be tracked? What FEATURES must be tracked?
+  +Which Components need access to which State? What Events are changing which State?
+  +Work on one feature at a time
+  +If two components need to access the same state, use a callback function
+  +Props pass state down the hierarchy
 
-### `npm test`
+- Bootstrap: Create React App <https://github.com/facebook/create-react-app>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## The Golden Rule: 
-
-🦸 🦸‍♂️ `Stop starting and start finishing.` 🏁
-
-If you work on more than one feature at a time, you are guaranteed to multiply your bugs and your anxiety.
-
-## Making a plan in React
-1) Make a drawing of your app. Simple "wireframes" 
-1) Component Tree
-    1) Look at the drawing and break it down into Components. Label these Components explicitly (i.e., DogList, etc)
-    1) Draw a hierarchy (or tree) of components, describing which components are parents and which are children 
-    1) Looking at the drawing, make a list of your app's features. What should a user "be able to do" with this app?
-    1) Now look at your component tree: which components "go with" which features? Draw lines and make these connections explicitly.
-1) State
-    1) Look back at the drawing and your list of features and imagine using the app. What _state_ do you need to track? 
-    1) For each piece of state, ask: "When does it change?" If the answer is, "never", then it is not state.
-    1) Similarly, find all the 'events' (user clicks, form submit, on load etc) in your app. Ask one by one, "What state changes?" for each of these events. (This should feel like the the inverse of the previous step.)
-    1) Think about how to validate each of your state changes. How will I know if state changed in response to this event? (Hint: react dev tools or console.log usually helps here.)
-1) Data flow
-    1) Look at your hierarchy and ask: which components need access to which state? Another way to ask this is: for each component, what does this component need to "do its job?". This list becomes the "props" of the component.
-    1) If a child needs state from a parent, you will need to pass props. What will you name these props? 
-    1) Notice especially if two siblings need the same state: if so, you need a callback (i.e., debit card).
-1) Pick one feature from your list and build it out. Start with its parentmost component, and work down the component chain. Do not build another feature until this one is finished (and you can prove that it is finished by validating state change).
-
-## Additional considerations
-- Is any of your state redundant? For example, if you're tracking `wins`, `losses`, and `total`, you can probably get rid of `losses` state, and calculate it as `total - wins`.
-- Where should each piece of state live? How are you going to get data from where it lives to where it needs to be?
+//     +2      Child component displays sign’s image, name and dates
+//     +2      Styled using individual style sheets imported into components
+//     +2      At least one component uses a background image using an import
+//     +2      Zodiac images are loaded dynamically from the public directory

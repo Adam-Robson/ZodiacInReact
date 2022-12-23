@@ -1,0 +1,9 @@
+.footer {
+    position: sticky;
+    bottom: 0;
+    padding: 7px 20px;
+    font-size: 0.7em;
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(216, 238, 244);
+}
