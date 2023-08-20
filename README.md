@@ -27,5 +27,5 @@ The app loads a list of Zodiac signs from a static file and uses .map to loop th
   + Work on one feature at a time
   + If two components need to access the same state, use a callback function
   + Props pass state down the hierarchy
-
-- This project was bootstrapped with [Create React App](<https://github.com/facebook/create-react-app>)
+---
+This project was bootstrapped with [Create React App](<https://github.com/facebook/create-react-app>)
