@@ -1,30 +1,87 @@
-# React + TypeScript + Vite
+# Stars
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://adamrobson.vercel.app/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adamrayrobson)
 
-Currently, two official plugins are available:
+## Description
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is an application built with [React](https://react.dev/), and bootstrapped with
+[Vite](https://vitejs.dev/). It is a build that displays the
+[Zodiac](https://en.wikipedia.org/wiki/Zodiac), including the name of each symbol
+and corresponding dates.
 
-## Expanding the ESLint configuration
+## Table of Contents
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [Stars](#stars)
+  - [Description](#description)
+  - [Table of Contents](#table-of-contents)
+  - [General Information](#general-information)
+  - [Authors](#authors)
+  - [Features](#features)
+  - [Objectives](#objectives)
+  - [Technologies Used](#technologies-used)
+  - [Run Locally](#run-locally)
+  - [Acknowledgements](#acknowledgements)
+  - [Contact](#contact)
 
-- Configure the top-level `parserOptions` property like this:
+## General Information
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+This project is a rebuild of a project that was originally
+created during my time in the July 2022 cohort
+at Alchemy Code Lab, in Portland, Oregon.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Authors
+
+> [@Adam-Robson](https://www.github.com/Adam-Robson)
+
+## Features
+
+An exercise for beginners learning React, to begin working with component architecture,
+and a declarative approach to creating the User Interface.
+
+## Objectives
+
+1. Use `className` attribute to set styles versus the `style` attribute
+2. Display images in React
+3. Use attributes in parent components to pass data down to child components as props
+4. Use {} as “portals” in the render method to write JavaScript inside HTML (JSX)
+5. Use `.map()` to iterate over an array and render new elements for each item in an array
+6. Add a unique key to each element rendered
+7. Use Netlify to deploy React app
+
+## Technologies Used
+
+- JavaScript
+- JSX
+- CSS
+- React
+- ESLint
+- Prettier
+- GitHub Actions
+- Netlify
+
+## Run Locally
+
+The following steps will run the app in the _development_ mode:
+
+1. Clone the project: `$ git clone https://the-project`
+
+2. Go to the project directory: `$ cd the-project`
+
+3. Install dependencies: `npm install`
+
+4. Start the server: `npm run dev`
+
+5. Open `http://localhost:5173` to view it in the browser.
+
+The page will reload if you make edits,
+and any lint errors will appear in the console.
+
+## Acknowledgements
+
+Thanks to Alchemy and React.
+
+## Contact
+
+Feel free to reach out! I can be messaged through LinkedIn by
+clicking on the badge above, or by emailing me at adamray312@gmail.com
