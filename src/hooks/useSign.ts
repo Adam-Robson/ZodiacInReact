@@ -1,21 +1,22 @@
-import { zodiac } from '../lib/data.ts';
-import { useEffect, useState } from 'react';
-import { fetchurl, host, key } from '../services/signs.ts';
-import axios from 'axios';
-import { type Horoscope } from '../lib/types'
+import { useEffect, useState } from 'react'
+import { useParams } from 'react-router-dom'
+import axios from 'axios'
+import { Horoscope } from '../lib/types'
+import { zodiac } from '../lib/data'
+import { fetchurl, key, host } from '../services/signs'
 
-export function useSign(signName: string) {
-  const [horoscope, setHoroscope] = useState<Horoscope | null>(null);
+export function useSign() {
+  const [horoscope, setHoroscope] = useState<Horoscope | null>(null)
+  const { name } = useParams<{ name: string }>()
 
   useEffect(() => {
     async function fetchHoroscope() {
-      const sign = zodiac.find((sign) => sign.name === signName)
-      if (!sign) return
+      const sign = zodiac.find((sign) => sign.name === name)
 
       const options = {
         method: 'GET',
         url: fetchurl,
-        params: { s: sign.name },
+        params: { s: sign?.name },
         headers: {
           'x-rapidapi-key': key,
           'x-rapidapi-host': host
@@ -31,8 +32,9 @@ export function useSign(signName: string) {
         }
       }
     }
+
     void fetchHoroscope()
-  }, [signName, setHoroscope])
+  }, [name, setHoroscope])
 
   return (
     { horoscope }

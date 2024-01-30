@@ -1,25 +1,18 @@
-# ZodiacInReact
+# Stars
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/0f0077a2-c5c5-4410-9f90-1301947d3a1b/deploy-status)](https://app.netlify.com/sites/zodiacinreact/deploys)
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://adamrobson.vercel.app/)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adamrayrobson)
 
 ## Description
 
 This is an application built with [React](https://react.dev/), and bootstrapped with
-[Create React App](https://create-react-app.dev/). It is a build that displays the
+[Vite](https://vitejs.dev/). It is a build that displays the
 [Zodiac](https://en.wikipedia.org/wiki/Zodiac), including the name of each symbol
-and corresponding dates. The app loads a list of Zodiac signs from a static file.
-
----
-
-Live demo on Netlify [here](https://zodiacinreact.netlify.app).
-
----
+and corresponding dates.
 
 ## Table of Contents
 
-- [ZodiacInReact](#zodiacinreact)
+- [Stars](#stars)
   - [Description](#description)
   - [Table of Contents](#table-of-contents)
   - [General Information](#general-information)
@@ -33,7 +26,8 @@ Live demo on Netlify [here](https://zodiacinreact.netlify.app).
 
 ## General Information
 
-This project was built as part of my time in the July 2022 cohort
+This project is a rebuild of a project that was originally
+created during my time in the July 2022 cohort
 at Alchemy Code Lab, in Portland, Oregon.
 
 ## Authors
@@ -76,16 +70,16 @@ The following steps will run the app in the _development_ mode:
 
 3. Install dependencies: `npm install`
 
-4. Start the server: `npm run start`
+4. Start the server: `npm run dev`
 
-5. Open `http://localhost:3000` to view it in the browser.
+5. Open `http://localhost:5173` to view it in the browser.
 
 The page will reload if you make edits,
 and any lint errors will appear in the console.
 
 ## Acknowledgements
 
-Thanks to Alchemy Code Lab and the makers of React.
+Thanks to Alchemy and React.
 
 ## Contact
 
