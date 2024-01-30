@@ -16,11 +16,6 @@ export interface HoverTouchContainerTypes {
   children: React.ReactNode
 }
 
-export interface BackgroundPropTypes {
-  backgroundImage: string;
-  children: React.ReactNode;
-}
-
 export interface Horoscope {
   about: string;
   career: string;
