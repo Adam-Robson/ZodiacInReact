@@ -7,7 +7,6 @@ export default function Home() {
     <BackgroundContainer backgroundImage={steal}>
     <main className="h-full w-full flex flex-col justify-around items-center">
       <Link to="/zodiac" className="text-5xl/9 font-normal subpixel-antialiased">zōdēˌak</Link>
-      <Link to="/books" className="text-5xl/9 font-normal subpixel-antialiased">bo͝ok SHäp</Link>
       </main>
     </BackgroundContainer>
   )
