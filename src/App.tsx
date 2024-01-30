@@ -1,11 +1,9 @@
+import { Routes } from 'react-router-dom'
 
-function App() {
-
+export default function App() {
   return (
-    <>
-     Hello World
-    </>
+      <Routes>
+
+      </Routes>
   )
 }
-
-export default App
