@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useCallback, useState } from 'react'
 import { Link } from 'react-router-dom'
 import ZodiacSignContainer from '../components/ZodiacSignContainer'
@@ -9,22 +8,29 @@ import bg from '../assets/bg.svg'
 import { Sign } from '../lib/types'
 
 export default function Zodiac() {
-  const [activeSign, setActiveSign] = useState<Sign | null>(null)
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  const [activeId, setActiveId] = useState<Sign>({
+    id: 0,
+    name: '',
+    title: '',
+    image: '',
+    dates: '',
+  })
 
   const handleSignClick = useCallback((id: number) => {
     const newSign = zodiac.find((sign) => sign.id === id)
-    if (newSign) setActiveSign(newSign)
-  }, [setActiveSign])
+    if (newSign) setActiveId(newSign)
+  }, [setActiveId])
 
   return (
     <BackgroundContainer backgroundImage={bg}>
       <Link to="/" className="absolute top-8 left-8 text-base subpixel-antialiased">home</Link>
     <section>
-      <h1 className="text-5xl text-center pt-10 font-light subpixel-antialiased">zōdēˌak</h1>
+        <h1 className="text-5xl text-center pt-10 font-light subpixel-antialiased">zōdēˌak</h1>
         <ul className="max-w-screen-lg mx-auto flex justify-center flex-row flex-wrap">
           {
             zodiac.map(({ id, name, title, image, dates }) => (
-              <div key={id} className="p-2" onClick={() => handleSignClick(id)}>
+              <div key={id} className="p-2" onClick={() => handleSignClick(activeId.id)}>
                 <li className="flex justify-center p-2">
                   <HoverTouchContainer>
                     <Link to={`/zodiac/${name}`}>

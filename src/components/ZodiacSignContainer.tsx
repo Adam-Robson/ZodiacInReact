@@ -1,7 +1,7 @@
 
 import { ZodiacSignProps } from '../lib/types'
 
-export default function ZodiacSignContainer({ title, image, dates,  }: ZodiacSignProps) {
+export default function ZodiacSignContainer({ title, image, dates }: ZodiacSignProps) {
   return (
     <div>
       <div className="image-container">
