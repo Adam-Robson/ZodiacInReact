@@ -3,6 +3,8 @@
 [![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://adamrobson.vercel.app/)
 [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/adamrayrobson)
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/50a33ead-845c-4e35-85af-1a9a25f28b7c/deploy-status)](https://app.netlify.com/sites/zodiacinreact/deploys)
+
 ## Description
 
 This is an application built with [React](https://react.dev/), and bootstrapped with
